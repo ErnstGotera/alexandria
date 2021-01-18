@@ -1,22 +1,22 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import Homepage from '../../screens/Homepage';
+import HomeScreen from '../../screens/HomeScreen';
 import LoginScreen from '../../screens/LoginScreen';
 const Tab = createBottomTabNavigator();
 
 const Tabs = () =>  (
     <Tab.Navigator
-      initialRouteName="Homepage"
+      initialRouteName="HomeScreen"
       tabBarOptions={{
         activeTintColor: '#00ABF7',
       }}
     >
       <Tab.Screen
-        name="Homepage"
-        component={Homepage}
+        name="HomeScreen"
+        component={HomeScreen}
         options={{
-          tabBarLabel: 'Homepage',
+          tabBarLabel: 'HomeScreen',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
@@ -34,7 +34,7 @@ const Tabs = () =>  (
       />
       <Tab.Screen
         name="Profile"
-        component={Homepage}
+        component={HomeScreen}
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color, size }) => (

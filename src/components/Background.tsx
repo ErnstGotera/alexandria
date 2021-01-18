@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import {
-  View,
+ View,
   StyleSheet,
   KeyboardAvoidingView,
 } from 'react-native';
